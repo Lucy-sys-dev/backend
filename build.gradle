@@ -5,6 +5,7 @@
 plugins {
     id 'java'
     id 'maven-publish'
+    id "io.spring.dependency-management" version "1.0.3.RELEASE"
 }
 
 repositories {
@@ -68,7 +69,7 @@ dependencies {
     testCompile 'com.googlecode.json-simple:json-simple:1.1.1'
 }
 
-group = 'groupId'
+group = 'user'
 version = '1.0-SNAPSHOT'
 sourceCompatibility = '1.8'
 
