@@ -40,7 +40,7 @@ class AuthenticationContoller {
 	@Autowired
 	private lateinit var b2BUserService: B2BUserService
 
-	@PostMapping("/login",produces = [(MediaType.APPLICATION_JSON_VALUE)])
+	@PostMapping("/v1/oauth2/token",produces = [(MediaType.APPLICATION_JSON_VALUE)])
 	fun login(@RequestBody loginRequest: LoginRequest): ResponseEntity<JwtAuthenticationResponse>? {
 
 		try {
